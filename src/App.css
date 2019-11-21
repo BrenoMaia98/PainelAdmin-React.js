@@ -1,0 +1,44 @@
+*{
+  margin: 0px;
+  padding:0px;
+  border:0px;
+}
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+
+.container{
+  height: 100vh;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginBox{
+  height: 35vw;
+  width:35vw;
+  border-radius: 40px;
+  background-color: white;
+  border: rgb(114, 101, 101) solid 2px;
+}
+.formAlign{
+  align-content: center;
+  justify-content: center;
+  width: 35vw;
+  height: 35vw;
+}
+
+.inputLogin{
+  width:25vw;
+  height:3vw;
+  border: 2px solid gray;
+  border-radius: 10px; 
+  font-size: 1.5em;
+  margin-left: 10px;
+}
+label{
+  font-weight: 600;
+  font-size: 1.1em;
+  padding: 10px;
+  display: block;
+
+}
