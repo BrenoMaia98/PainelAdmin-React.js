@@ -7,7 +7,7 @@ const Menu = ["Novo Cliente", "Alterar Cliente", "Resumo"];
 
 function DrawerLeft() {
   return (
-    <div className="root">
+    <div className="pageContainer">
       <div className="drawer">
         <p className="titulo"> Painel de Administrador</p>
         {Menu.map((text, index) => (
@@ -20,7 +20,7 @@ function DrawerLeft() {
           </NavLink>
         ))}
       </div>
-      <main>
+      <main className="content">
         <DrawerLeftRouter />
       </main>
     </div>

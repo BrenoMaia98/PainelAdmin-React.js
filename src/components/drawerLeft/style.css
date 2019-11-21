@@ -5,17 +5,18 @@
 }
 
 .drawer{
+    width: 20vw;
     height: 100vh;
-    width: 25vw;
-    background-color: beige
+    flex-shrink: 0;
+    background-color: beige;
 }
 
 .titulo{
     font-family: 'Bebas Neue', cursive;
     font-size: 2em;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
+    margin-bottom:20px; 
 }
 
 .linkDrawer{
@@ -34,4 +35,11 @@
     
     background-color: #ccc;
     color:blue;
+}
+.pageContainer{
+    display: flex;
+}
+
+.content{
+    flex-grow: 1;
 }

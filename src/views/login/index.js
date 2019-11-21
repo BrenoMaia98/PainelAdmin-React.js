@@ -60,7 +60,7 @@ class Login extends React.Component {
                             </div>
                             <br/>
                             <div className="buttonDiv">
-                                <button className="forms__Button" onClick={() => this.login()}>Entrar</button>
+                                <button className="forms__Button" onClick={(e) => this.login(e)}>Entrar</button>
                             </div>
 
                         </form>
