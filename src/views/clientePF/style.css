@@ -1,13 +1,14 @@
 .bg {
   background-repeat: round;
   z-index: -1;
-  background-image: url('../../../img/bgLogin.jfif');
+  background-image: url('../../img/bgLogin.jfif');
 }
 
 .conteudoPagina {
   min-height: 100vh;
   justify-content: center;
   align-items: center;
+  padding-bottom: 50px;
 }
 .tituloPagina{
   color: black;

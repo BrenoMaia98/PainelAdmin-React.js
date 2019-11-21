@@ -1,0 +1,90 @@
+.bg {
+  background-repeat: round;
+  z-index: -1;
+  background-image: url('../../../img/bgLogin.jfif');
+}
+
+.AppLogin {
+  background-color: rgb(226, 226, 226,0);
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.formBox {
+  background-color: #25462c;
+  padding:20px;
+  width: 40vw;
+}
+
+
+.FormTitle {
+  color: rgb(0, 106, 255);
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+.forms {
+  margin-bottom: 20px;
+}
+
+.forms__Label {
+  display: block;
+  text-transform: uppercase;
+  font-size: .9em;
+  color: white;
+}
+
+.forms__Input {
+  width: 85%;
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  border-bottom: 1px solid #445366;
+  font-size: 1em;
+  font-weight: 300;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+
+
+.title {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.7em;
+  margin: 0 10px;
+  padding-bottom: 5px;
+  color: white;
+  text-align: center;
+  width: 100%;
+  border-bottom: 3px solid rgb(248, 248, 248);
+}
+
+.forms__Input::placeholder {
+  color: #616E7F;
+}
+
+
+.forms__Button {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: 3px solid rgb(37, 3, 3) !important;
+  outline: none;
+  border-radius: 25px;
+  padding: 15px 70px;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  font-weight: 500;
+  cursor: pointer;
+  align-self: center;
+  font-family: 'Bebas Neue', cursive;
+}
+.buttonDiv{
+  display: flex;
+  justify-content: center;
+}

@@ -56,5 +56,49 @@ label{
   cursor: pointer;
 }
 
+/* Formatação da edição e adição de registros */
+.App-Button{
+  background-color: #5BAADC !important;
+  margin-top: 20px !important;
+  margin-right: 20px !important;
+  padding:10px;
+  border-radius: 5px;
+  border: 2px solid black;
+  color: white;
+}
+.App-alignBTN{
+  display: flex;
+  justify-content: center;
+  
+}
+.App-forms div{
+  display: flex;
+}
+
+.App-forms div label{
+  flex: 50%;
+  margin-bottom: 10px;
+}
+
+.App-forms div label input{
+  width: 50%;
+  font-size: 1.2em;
+  
+}
+.App-AddRemoveDiv{
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.App-List{
+  list-style-type: none;
+  text-align: center;
+  border-top: 2px solid black; 
+}
+.App-ListTitle{
+  font-weight: 600;
+  font-size: 1.4em;
+}
 /* Fonte Bebas Neue */
 @import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
