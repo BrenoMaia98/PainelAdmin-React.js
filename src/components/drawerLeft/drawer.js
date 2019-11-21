@@ -1,7 +1,7 @@
 import React from 'react';
 import "./style.css"
 import { NavLink } from "react-router-dom";
-
+import DrawerLeftRouter from "./drawerLeft.routes"
 
 const Menu = ["Novo Cliente", "Alterar Cliente", "Resumo"];
 
@@ -11,8 +11,8 @@ function DrawerLeft() {
       <div className="drawer">
         <p className="titulo"> Painel de Administrador</p>
         {Menu.map((text, index) => (
-          <NavLink 
-            key={index} 
+          <NavLink
+            key={index}
             to={`/${text.toLowerCase()}`}
             className="linkDrawer"
           >
@@ -20,6 +20,9 @@ function DrawerLeft() {
           </NavLink>
         ))}
       </div>
+      <main>
+        <DrawerLeftRouter />
+      </main>
     </div>
   );
 }
