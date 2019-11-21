@@ -20,13 +20,11 @@ class Login extends React.Component {
     async login(event) {
         event.preventDefault();
         try{
-            //if(this.state.login == "login" && this.state.senha == "123")
                 auth.authenticate(this.state.login , this.state.senha,() => {
                             this.setState(() => ({
                               redirectToReferrer: true
                             }));
                         });
-            //else alert("Senha ou Login incorretos");
         }catch(err){
             alert(err);
             window.location.replace('/login');

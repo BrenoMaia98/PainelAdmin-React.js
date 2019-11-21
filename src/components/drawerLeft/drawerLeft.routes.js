@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 import Login from "../../views/login/index";
-import NovoCliente from "../../views/usuario/novoUsuario/index"
-import EditUsuario from "../../views/usuario/editUsuario/index"
+import NovoEditClientePF from "../../views/clientePF/novoEditclientePF/index"
+import ClientePF from "../../views/clientePF/index"
+import NovoEditClientePJ from "../../views/clientePJ/novoEditclientePJ/index"
+import ClientePJ from "../../views/clientePJ/index"
 
 class DrawerLeftRouter extends Component {
     render() {
@@ -11,9 +13,14 @@ class DrawerLeftRouter extends Component {
             <div>
                 <Switch>
                     <Route exact path="/login" component={Login} />
-                    <Route exact path="/novo cliente" component={NovoCliente} />
-                    <Route exact path="/alterar cliente" component={EditUsuario} />
-                    <Route exact path="/resumo" component={Login} />
+                    
+                    <Route exact path="/pessoa fisica" component={ClientePF} />
+                    <Route exact path="/pessoa fisica/edit" component={NovoEditClientePF} />
+                    <Route exact path="/pessoa fisica/add" component={NovoEditClientePF} />
+
+                    <Route exact path="/pessoa juridica" component={ClientePJ} />
+                    <Route exact path="/pessoa juridica/edit" component={NovoEditClientePJ} />
+                    <Route exact path="/pessoa juridica/add" component={NovoEditClientePJ} />
                 </Switch>
             </div>
         );

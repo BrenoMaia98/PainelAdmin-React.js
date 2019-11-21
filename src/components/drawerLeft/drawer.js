@@ -3,7 +3,7 @@ import "./style.css"
 import { NavLink } from "react-router-dom";
 import DrawerLeftRouter from "./drawerLeft.routes"
 
-const Menu = ["Novo Cliente", "Alterar Cliente", "Resumo"];
+const Menu = ["Pessoa fisica", "Pessoa juridica", "Resumo"];
 
 function DrawerLeft() {
   return (
