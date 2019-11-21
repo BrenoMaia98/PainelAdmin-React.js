@@ -8,7 +8,7 @@ import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 import './style.css';
 
 
-class EditUsuario extends React.Component {
+class Usuarios extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -29,14 +29,26 @@ class EditUsuario extends React.Component {
     this.setState({linhas:data});
     }
 
+    removerEntrada(index) {
+            if(window.confirm('Tem certeza que deseja deletar este item de forma PERMANENTE?')){
+                var auxiliar = this.state.linhas;
+                for (var i = auxiliar.length - 1; i >= 0; i--) {
+                    if (auxiliar[i].id === index) {
+                        auxiliar.splice(i, 1);
+                    }
+                }
+                this.setState({ linhas: auxiliar });
+            }
+    }
+    
     render() {
         return (
             <div className="conteudoPagina bg">
-                <div className="titulo">
+                <div className="tituloPagina">
                     <p>Seção Usuário</p>
                 </div>
                 <div className="descricao">
-                    <p>Nesta seção é possivel editar, remover e adicionar um novo usuário</p>
+                    <p>Nesta seção é possivel editar, remover e adicionar um novo usuário. Basta apenas clicar nos icones da tabela ou no botão abaixo da mesma</p>
                 </div>
 
                 <div className="center">
@@ -67,7 +79,7 @@ class EditUsuario extends React.Component {
                                            <FontAwesomeIcon icon={faEdit} size="lg" className="App-icon" />
                                         </NavLink>
                                     </td>
-                                    <td onClick={() => this.removerPacote(row.id)} align="center">
+                                    <td onClick={() => this.removerEntrada(row.id)} align="center">
                                         <FontAwesomeIcon icon={faTrashAlt} size="lg" className="App-icon" />
                                     </td>
                                 </tr>
@@ -80,4 +92,4 @@ class EditUsuario extends React.Component {
     }
 }
 
-export default EditUsuario;
+export default Usuarios;

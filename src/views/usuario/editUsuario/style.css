@@ -9,11 +9,23 @@
   justify-content: center;
   align-items: center;
 }
-.titulo{
+.tituloPagina{
   color: black;
   font-size: 2.5em;
   font-family: "Bebas Neue";
-  
+  text-align: center;
+  padding-top: 5vh; 
+  padding-bottom: 2vh; 
+  margin-bottom: 5vh; 
+  border-bottom: 3px solid black;
+}
+
+.descricao{
+  color: black;
+  font-size: 1.5em;
+  text-align: center;
+  padding-bottom: 2vh; 
+  margin-bottom: 5vh; 
 }
 
 

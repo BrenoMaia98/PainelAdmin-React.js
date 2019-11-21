@@ -3,7 +3,7 @@
   padding:0px;
   border:0px;
 }
-@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+
 
 .container{
   height: 100vh;
@@ -42,3 +42,19 @@ label{
   display: block;
 
 }
+
+
+/* Estilos para todos os componentes abaixo */
+
+/* Icones das tabelas */
+.App-icon{
+  color: black;
+}
+
+.App-icon:hover {
+  color: rgb(255, 0, 0);
+  cursor: pointer;
+}
+
+/* Fonte Bebas Neue */
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
