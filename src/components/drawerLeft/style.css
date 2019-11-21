@@ -5,9 +5,7 @@
 }
 
 .drawer{
-    width: 20vw;
-    height: 100vh;
-    flex-shrink: 0;
+    width: 20vw;height: 100vh;
     background-color: beige;
 }
 
